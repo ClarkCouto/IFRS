@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+* {
+	font-family: sans-serif;
+	color: #989898;
+}
+
+div {
+	padding-left: 10px;
+	padding-bottom: 3px;
+	float: left;
+}
+
+input {
+	border: 1px solid #989898;
+	margin-bottom: 12px;
+	padding-top: 4px;
+
+}
+
+#inputstyle {
+	margin-top: 14px;
+	margin-left: 50px;
+
+}
+
+#inputNome, #inputEmail {
+	width: 300px;
+}
+
+fieldset {
+	width: 500px;
+}
+
+div input[type="submit"] {
+      border-radius: 3px;
+}

@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+* {
+	font-family: sans-serif;
+	border: 0;
+}
+
+table {
+	border: 1px solid #3fbab4;
+	border-collapse: collapse;
+}
+
+tr, td, th {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 80px;
+	padding-left: 0;
+	border: 0;
+}
+
+#maior {
+	padding-right: 300px;
+}
+
+#maiorzinho {
+	padding-right: 150px;
+}
+
+tr.titleStyle {
+	background-color: #A5B3D0;
+}
+
+.blue {
+	background-color: #BFCDCE;
+}
