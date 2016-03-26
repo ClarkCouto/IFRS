@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+* {
+	font-family: sans-serif;
+}
+
+tr td, th {
+	border: 0,2px solid white;
+}
+
+td, th {
+	padding: 7px;
+	padding-right: 30px;
+}
+
+th {
+	background: linear-gradient(#549DB3 0%, #549DB3 40%, #328AA4 40%, #328AA4 100%);
+	color: white;
+	
+}
+
+.green {
+	background-color: #cbec93;
+}
+
+.sgreen {
+	background-color: #dcf2b7;
+}
+
+.white {
+	background-color:#F8FBFC;
+}
+
+.blue {
+	background-color: #E5F1F4;
+}

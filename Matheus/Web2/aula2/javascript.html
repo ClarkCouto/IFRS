@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>A E S T H E T I C S   C A L C U L A T 0 R</title>
+
+	<script type="text/javascript">
+		(function titleScroller(text) {
+		    document.title = text;
+		    setTimeout(function () {
+		        titleScroller(text.substr(1) + text.substr(0, 1));
+		    }, 500);
+}("A E S T H E T I C S...C A L C U L A T 0 R..."));
+	</script>
+
+	<style>
+		body {
+			font-family: "Comic Sans MS";
+			background-image: url("stars.gif");
+			color: blue;
+		}
+
+		label {
+			font-size: 23pt;
+		}
+
+		#formulario {
+			padding: 30px;
+			width: 500px;
+			margin: auto;
+			margin-top: 300px;
+			background: rgba(250,250,0,0.8);
+		}
+
+		#titulo {
+			color: lime;
+		}
+
+		.btn {
+			background: linear-gradient(red, purple);
+			color: white;
+			width: 180px;
+			height: 50px;
+			font-size: 30pt;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function calcular(operacao)
+		{
+
+		calc = document.calculadora;
+
+		num1 = calc.num1.value;
+		num2 = calc.num2.value;
+
+		if (operacao == 1)
+		{
+			oper = parseInt(num1) + parseInt(num2);
+			alert("O resultado da soma é " + oper);
+
+		}
+		else if (operacao == 2)
+		{
+			oper = parseInt(num1) - parseInt(num2);
+			alert("O resultado da subtração é " + oper);
+		}
+		else if (operacao == 3)
+		{
+			oper = parseInt(num1) * parseInt(num2);
+			alert("O resultado da multiplicação é " + oper);
+		}
+		else if (operacao == 4) {
+			if (num2 != 0) {
+				oper = parseInt(num1) / parseInt(num2);
+				alert("O resultado da divisão é " + oper);
+			}
+			else {
+				alert("É impossível dividir por 0!");
+			}
+		}
+
+	}
+
+	</script>
+
+</head>
+<body>
+
+	<iframe width="0" height="0" src="https://www.youtube.com/embed/cU8HrO7XuiE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+
+	<div id ="formulario">
+		<div id="titulo">
+			<marquee><blink><h1>C A L C U L A T E _ T H E _ W O R L D </h1></blink></marquee>
+		</div>
+		<form name="calculadora" method="post">
+			<label for="num1">Número 1? </label>
+			<input name="num1" type="text"><br>
+			<label for="num2">Número 2? </label>
+			<input name="num2" type="text"><br>
+			<input name="soma" type="button" class="btn" value="+" onMouseOver="return calcular(1)">
+			<input name="subtracao" type="button" class="btn" value="-" onMouseOver="return calcular(2)">
+			<input name="multiplicacao" type="button" class="btn" value="*" onMouseOver="return calcular(3)">
+			<input name="divisao" type="button" class="btn" value="/" onMouseOver="return calcular(4)">
+
+		</form>
+	</div
+</body>
+</html>

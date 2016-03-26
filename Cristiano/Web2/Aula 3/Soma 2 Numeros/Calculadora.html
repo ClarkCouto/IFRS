@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="CalculadoraCSS.css" />
+		<script src="calculadoraJS.js"></script>
+		<title>Calculadora - JavaScript</title>
+	</head>
+	<body>
+			<form name="calculadora">
+				<fieldset>
+					<label id="lblCalculadora">Calculadora</label><br><br>
+					<label>Número 1:</label>
+					<input type="text" id="num1" name="numero1"/><br>
+					<label>Número 2:</label>
+					<input type="text" id="num2" name="numero2"/><br><br>
+					<!--
+					//Chamar a função clicando no botão
+				<label id="lblCalculadora">Calculadora</label>
+					<input type="button" value=" + " onclick="return somar()">
+					<input type="button" value=" - " onclick="return subtrair()">
+					<input type="button" value=" * " onclick="return multiplicar()">
+					<input type="button" value=" / " onclick="return dividir()">
+					//Chamar a função passando o mouse-->
+					<input type="button" value=" + " onmouseover="return somar()">
+					<input type="button" value=" - " onmouseover="return subtrair()">
+					<input type="button" value=" * " onmouseover="return multiplicar()">
+					<input type="button" value=" / " onmouseover="return dividir()">
+					
+				</fieldset>
+			</form>
+	</body>
+</html>
