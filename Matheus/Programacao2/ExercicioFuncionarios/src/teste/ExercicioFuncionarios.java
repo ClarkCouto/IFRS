@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exerciciofuncionarios;
+package teste;
 
 /**
  *
@@ -11,11 +11,4 @@ package exerciciofuncionarios;
  */
 public class ExercicioFuncionarios {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
 }
