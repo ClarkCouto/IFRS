@@ -19,21 +19,11 @@ public abstract class FuncionarioAbstrato {
     
     public final char MASCULINO = 'M';
     public final char FEMININO = 'F';
+
     
-    
-    public FuncionarioAbstrato () {        
-    }
-    
-    public FuncionarioAbstrato (String nome, char sexo, String cpf, Endereco endereco) {
-        this.nome = nome;
-        this.sexo = sexo;
-        this.cpf = cpf;
-        this.endereco = endereco;
-    }
-    
-     public FuncionarioAbstrato (String nome, char sexo,
-             String cpf, String rua, int numero,
-             String complemento, String bairro, String cidade) {
+     public FuncionarioAbstrato (String nome, char sexo, String cpf, String rua,
+                                 int numero, String complemento, String bairro,
+                                 String cidade) {
         this.nome = nome;
         this.sexo = sexo;
         this.cpf = cpf;
