@@ -1,0 +1,127 @@
+package dominio;
+
+public class Aluno {
+  private String nome;
+  private float nota1;
+  private float nota2;
+  private Endereco endereco;
+  
+
+  public Aluno() {
+	  
+  }
+  
+  //Construtor
+  public Aluno(String n) {
+    this.setNome(n);
+  }
+
+  //Outro construtor
+  public Aluno(String n, float n1, float n2) {
+    this.setNome(n);
+    this.setNota1(n1);
+    this.setNota2(n2);
+  }
+
+  //Outro construtor
+  public Aluno(String n, float n1, float n2, Endereco e ) {
+    this.setNome(n);
+    this.setNota1(n1);
+    this.setNota2(n2);
+    this.setEndereco(e);
+  }
+  
+  //Outro construtor
+  public Aluno(String n, float n1, float n2, String rua, int numero) {
+    this.nome = n;
+    this.setNota1(n1);
+    this.setNota2(n2);
+    
+    Endereco e;
+    e = new Endereco(rua, numero);
+    this.setEndereco(e);
+  }
+
+
+  public String getNome() {
+    return nome;
+  }
+
+  public void setNome(String nome) {
+    if (nome == null) {
+      new RuntimeException("Erro: nome não pode ser null");
+    }
+    else if (nome.equals("")) {
+      new RuntimeException("Erro: nome não pode ser vazio");
+    }
+    else {
+      this.nome = nome;
+    }
+  }
+
+  public float getNota1() {
+    return nota1;
+  }
+
+  //Utilizando o parâmetro x para ceceber a nota.
+  public void setNota1(float x) {
+    if ( (x >= 0) && (x <= 10) ) {
+      this.nota1 = x;
+    }
+    else {
+      //Lançando um exceção.
+      throw new RuntimeException("Nota 1 inválida.");
+    }
+  }
+
+  public float getNota2() {
+    return nota2;
+  }
+
+  //Utilizando o parâmetro nota2 para receber a nota.
+  public void setNota2(float nota2) {
+    if ( (nota2 >= 0) && (nota2 <= 10) ) {
+      this.nota2 = nota2;
+    }
+    else {
+      //Lançando um exceção.
+      throw new RuntimeException("Nota 2 inválida.");
+    }
+  }
+
+  
+  
+  public Endereco getEndereco() {
+	return endereco;
+}
+
+public void setEndereco(Endereco endereco) {
+	this.endereco = endereco;
+}
+
+public float media(){
+    float m;
+    m = (this.nota1 + this.nota2) / 2;
+    return m;
+  }
+  
+  public String situacao() {
+    if (media() < 3) {
+      return "REPROVADO";
+    }
+    else if ( media()< 7 ) {
+      return "RECUPERACAO";
+    }
+    else {
+      return "APROVADO";
+    }
+  }
+
+@Override
+public String toString() {
+	return "Aluno [nome=" + nome + ", nota1=" + nota1 + ", nota2=" + nota2
+			+ ", endereco=" + endereco + "]";
+}
+
+  
+}//Aluno.

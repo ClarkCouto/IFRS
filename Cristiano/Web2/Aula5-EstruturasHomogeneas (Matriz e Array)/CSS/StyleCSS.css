@@ -1,0 +1,103 @@
+//CSS Todos Juntos
+.formulario{
+    height: 100%;
+    width: 100%;
+}
+
+.fieldInicial{
+    background-color: lightcoral;
+    position: absolute;
+    height: 94%;
+    width: 96.5%;
+}
+
+#fieldPaginaInicial{
+    //background-color: lightsalmon;
+    text-align: center;
+    margin-top:10%;
+    position: relative;
+    left: 40%;
+    width: 200px;
+    height: 270px;
+}
+
+.btn{
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+}
+
+.divInformacoes{
+    margin: 30px 0px 30px 0px;
+}
+
+.entradaDados{
+    margin: 20px 0px 20px 0px;
+}
+
+.lblResultado{
+    margin: 10px 0px 10px 0px;
+}
+
+#fieldInfoExercicio1{
+    text-align: justify;
+    position: relative;
+    left: 40%;
+    margin-top: 10%;
+    width: 200px;
+    height: 100px;
+}
+
+.fieldResultadoExercicio1{
+    text-align: center;
+    background-color: lightcoral;
+    position: relative;
+}
+
+#divMatrizExercicio1{
+    position: relative;
+    text-align: center;
+}
+
+.wrap{
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.paginaCompleta{
+    height: 100%;
+    width: 100%;
+    background-color: lightcoral;
+    
+}
+.fieldInformacoes{
+    text-align: center;
+    background-color: lightsalmon;
+}
+
+.fieldResultadoExercicios{
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.titulo{
+    color: red;
+}
+        
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}        
+
+table, td {       
+    border-collapse: collapse;
+    border: 1px solid black;                
+    font-family: sans-serif;               
+}
+		
+td {
+    width: 30px;
+    height: 30px;
+}
