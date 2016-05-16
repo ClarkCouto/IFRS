@@ -64,26 +64,7 @@ public class TesteAlugueis {
             System.out.println("Valor do aluguel: " + a.precoFinal());
             System.out.println("-------------------------------------------------");
         }
-        //tela
-        //FALTA FAZER IMPRIMIR CERTO SÓ OS APARTAMENTOS ALUGADOS
-//        for (Apto a : portalDoSul.getApartamentosAlugados()) {
-//            if (a.getInquilino() != null) {
-//                System.out.println("Edifício: " + portalDoSul.getNome());
-//                System.out.println("Número do Apartamento: " + a.getNumero());
-//                System.out.println("Inquilino: " + a.getInquilino().getNome());
-//                System.out.println("Valor do aluguel: " + a.precoFinal());
-//            }
-//        }
-//        
-//        for (Apto a : estelar.getApartamentosAlugados()) {
-//            if (a.getInquilino() != null) {
-//                System.out.println(a.getNumero());
-//                
-//            } else {
-//                System.out.println();
-//            }
-//            
-//        }
+        
             
         
     }

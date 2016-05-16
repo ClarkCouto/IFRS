@@ -44,17 +44,20 @@ public class Edificio {
         return this.apto;
     }
     
-    public void adicionaApartamento(Apto a) {
-            listaApto.add(a);
-            if (a.getAlugado()) {
-                listaAptoAlugado.add(a);
-            }
-            
+    public void adicionaApartamento(Apto a){
+        listaApto.add(a);
     }
     
-    public List<Apto> getApartamentosAlugados() {
-            return listaAptoAlugado;
-        
+    public List<Apto> getApartamentosAlugados(){
+        List<Apto> apartamentos = new ArrayList<>();
+        for(Apto a : listaApto){
+            if(a.getAlugado()){
+                listaAptoAlugado.add(a);
+            }
+        }
+        return listaAptoAlugado;
     }
+    
+    
 
 }
