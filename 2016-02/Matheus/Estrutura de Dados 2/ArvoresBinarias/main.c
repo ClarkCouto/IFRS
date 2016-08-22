@@ -10,41 +10,52 @@
 
 typedef struct nodo {
     int valor;
-    struct nodo *esq, *dir;    
-} folha;
+    struct nodo *pai, *esq, *dir;    
+} nodo;
 
-folha *cria_folha (int v) {
-    folha *nova;
-    nova = (folha *)malloc(sizeof(folha));
-    return nova;
+nodo *cria_nodo (int v, nodo *raiz) {
+    // Cria novo nodo e aloca seu espaço requerido em memória
+    nodo *novo;
+    novo = (nodo *)malloc(sizeof(nodo));
+    
+    // Aponta para o nodo pai e define os filhos como NULL
+    novo->pai = raiz;
+    novo->esq, novo->dir = NULL;
+    
+    // Retorna o nodo criado
+    return novo;
 }
 
-// Testa se o elemento é uma raiz ou folha.;
-// Se for raiz: retorna 1. Se for folha: retorna 0. Se não existir: retorna 9.
-int testa_raiz (folha *folha) {
+// Testa se o elemento é uma raiz ou nodo.;
+// Se for raiz: retorna 1. Se for nodo: retorna 0. Se não existir: retorna 9.
+int testa_raiz (nodo *nodo) {
     int teste = 9; // Assume que não existe por padrão
-    if (folha != NULL)
-        if (folha->esq != NULL && folha->dir != NULL)
+    if (nodo != NULL)
+        if (nodo->esq != NULL && nodo->dir != NULL)
             teste = 1; // É raiz
         else
-            teste = 0; // É folha
+            teste = 0; // É nodo
     return teste;
 }
 
-folha *insere (folha *raiz, int v) {    
-    if (testa_raiz == 1)
-        if (raiz->valor > v)
-            insere(raiz->esq, v);
-        else
-            insere(raiz->dir, v);
-//    else if (testa_raiz == 0)
-        
-    
-}
+//nodo *insere (nodo *raiz, int v) {    ;
+//    
+//    // Cria novo nodo
+//    
+//    // Se nodo for raiz, navega para o próximo nodo
+//    if (testa_raiz == 1)
+//        if (raiz->valor > v)
+//            insere(raiz->esq, v);
+//        else
+//            insere(raiz->dir, v);
+//    // Se nodo for folha, insere uma nova folha
+//    else if (testa_raiz == 0)       
+//        
+//}
 
 int main(int argc, char** argv) {
     
-    folha *raiz;
+    nodo *raiz;
     
     return (EXIT_SUCCESS);
 }
