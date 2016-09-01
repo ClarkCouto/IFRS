@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ArvoresBinarias
+PROJECTNAME=ArvoreBinariaBusca
 
 # Active Configuration
 DEFAULTCONF=Debug
