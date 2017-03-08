@@ -4,25 +4,25 @@ public class Cpf {
     
     // Atributos
     
-    private long numero;
+    private String numero;
     private int digito;
     
     // Construtores
 
     public Cpf() {}
     
-    public Cpf(long numero, int digito) {
+    public Cpf(String numero, int digito) {
         this.numero = numero;
         this.digito = digito;
     }
     
     // Getters & Setters
 
-    public long getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(long numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 

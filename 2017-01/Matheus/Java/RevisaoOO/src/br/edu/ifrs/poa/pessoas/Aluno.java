@@ -24,7 +24,7 @@ public class Aluno extends Pessoa{
         this.situacao = situacao;
     }
 
-    public Aluno(String nome, String telefone, String endereco, long matricula, String curso, int situacao, long numero, int digito) {
+    public Aluno(String nome, String telefone, String endereco, long matricula, String curso, int situacao, String numero, int digito) {
         super(nome, telefone, endereco);
         this.matricula = matricula;
         this.curso = curso;
